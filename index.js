@@ -11,9 +11,9 @@ const zmenaSoupatka =() => {
     let urovenHTML = prompt ("Vyjadrete svou uroven znalosti HTML cislem od 0 do 100")
     let urovenCSS = prompt ("Vyjadrete svou uroven znalosti CSS cislem od 0 do 100")
     let urovenJS = prompt ("Vyjadrete svou uroven znalosti Java Sriptu cislem od 0 do 100")
-
-    const cisloHTML = document.getElementById("#test1")
-    cisloHTML.textContent="test"
+console.log(urovenHTML)
+   // const cisloHTML = document.getElementById("#test1")
+   // cisloHTML.textContent="test"
 
     return
 }
