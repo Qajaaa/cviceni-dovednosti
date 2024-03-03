@@ -12,7 +12,7 @@ const zmenaSoupatka =() => {
     let urovenCSS = prompt ("Vyjadrete svou uroven znalosti CSS cislem od 0 do 100")
     let urovenJS = prompt ("Vyjadrete svou uroven znalosti Java Sriptu cislem od 0 do 100")
 
-    const cisloHTML = document.querySelector("#skill1 .skill__value")
+    const cisloHTML = document.getElementById("#test1")
     cisloHTML.textContent="test"
 
     return
