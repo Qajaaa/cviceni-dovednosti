@@ -6,16 +6,34 @@
     Tato funkce při zavolání nastaví posuvník se zadaným id na správnou hodnotu. 
     Použijte tuto funkci ve vašem kódu, abyste nemuseli při nastavování posuvníků psát třikrát po sobě téměř stejný kód.
 */
+    let urovenHTML = prompt ("Vyjadrete svou uroven znalosti HTML cislem od 0 do 100");
+    let urovenCSS = prompt ("Vyjadrete svou uroven znalosti CSS cislem od 0 do 100");
+    let urovenJS = prompt ("Vyjadrete svou uroven znalosti Java Sriptu cislem od 0 do 100");
 
-const zmenaSoupatka =() => {
-    let urovenHTML = prompt ("Vyjadrete svou uroven znalosti HTML cislem od 0 do 100")
-    let urovenCSS = prompt ("Vyjadrete svou uroven znalosti CSS cislem od 0 do 100")
-    let urovenJS = prompt ("Vyjadrete svou uroven znalosti Java Sriptu cislem od 0 do 100")
-console.log(urovenHTML)
-   // const cisloHTML = document.getElementById("#test1")
-   // cisloHTML.textContent="test"
+    const updateSkill =(id,value) => {
+        document.querySelector("#" +id+" .skill__progress").style.width = value + "%" ;
+        document.querySelector("#" +id+" .skill__value").textContent = value + "/100";
+        
+    }
+    
+    
+    if (urovenHTML >= 0 && urovenHTML <= 100) {
+        updateSkill ("skill1",urovenHTML)
+    }else {
+        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+    }
 
-    return
-}
+    if (urovenHTML >= 0 && urovenHTML <= 100) {
+        updateSkill ("skill2",urovenCSS)
+    }else {
+        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+    }
 
 
+    if (urovenHTML >= 0 && urovenHTML <= 100) {
+        updateSkill ("skill3",urovenJS)
+    }else {
+        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+    }
+
+ 
