@@ -20,20 +20,20 @@
     if (urovenHTML >= 0 && urovenHTML <= 100) {
         updateSkill ("skill1",urovenHTML)
     }else {
-        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+        alert("Neplatná hodnota pro dovednost HTML. Zadejte prosím číslo v rozsahu 0-100");
     }
 
     if (urovenHTML >= 0 && urovenHTML <= 100) {
         updateSkill ("skill2",urovenCSS)
     }else {
-        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+        alert("Neplatná hodnota pro dovednost CSS. Zadejte prosím číslo v rozsahu 0-100");
     }
 
 
     if (urovenHTML >= 0 && urovenHTML <= 100) {
         updateSkill ("skill3",urovenJS)
     }else {
-        alert("Neplatná hodnota pro dovednost. Zadejte prosím číslo v rozsahu 0-100");
+        alert("Neplatná hodnota pro dovednost JS. Zadejte prosím číslo v rozsahu 0-100");
     }
 
  
